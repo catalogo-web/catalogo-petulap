@@ -1,0 +1,102 @@
+.product {
+  background-color: white;
+  margin: 1em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+}
+.product aside.left {
+  width: 55%;
+}
+.product aside.right {
+  width: 45%;
+}
+
+.product .left .num {
+  font-size: 1.3em;
+  background-color: var(--color-1);
+  color: var(--color-white);
+  padding: 0.5em;
+  position: absolute;
+  left: 0em;
+}
+.product .right img {
+  max-height: 3em;
+}
+.product .right .hardware h4 {
+  font-weight: 700;
+  position: relative;
+  margin-left: 2em;
+}
+.product .hardware h4 i {
+  position: absolute;
+  left: -2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.product .right .optional {
+  font-size: 0.7em;
+}
+.product .foot {
+  position: relative;
+}
+.product .icon-whatsapp {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  right: 0.7em;
+  background-color: #367cfe;
+  background-color: #075E54;
+  padding: 0.3em;
+  text-decoration: none;
+  border-radius: 0.7em;
+  border-top-left-radius: 0;
+}
+.product .icon-whatsapp:hover {
+  background-color: #25d366;
+}
+.product .btn-price {
+  border-top-left-radius: 0;
+  font-size: 2em;
+  margin: 0 0 0.2em 0;
+  box-shadow: 1px 1px 1px 1px white, 3px 3px 3px 1px #3338;
+}
+.product .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+.product .brand .model {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+@media (min-width: 40rem) {
+  body {
+    font-size: 1.1vw;
+    /* background-color: indigo; */
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .products article {
+    flex: 1 1 47%;
+    padding: 1em;
+    border: 1px solid #8884;
+    /* height: 100%; */
+    /* align-self: center; */
+  }
+}
+@media (min-width: 65rem) {
+  body {
+    font-size: 0.8vw;
+    /* background-color: tomato; */
+  }
+  .products article {
+    flex: 1 1 31%;
+  }
+}
